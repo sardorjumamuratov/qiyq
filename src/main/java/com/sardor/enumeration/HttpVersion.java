@@ -1,7 +1,5 @@
 package com.sardor.enumeration;
 
-import com.sardor.enumeration.headers.EnumUtils;
-
 public enum HttpVersion implements EnumUtils {
     HTTP_1_0("HTTP/1.0"),
     HTTP_1_1("HTTP/1.1"),

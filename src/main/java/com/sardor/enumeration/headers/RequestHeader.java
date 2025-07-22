@@ -1,5 +1,7 @@
 package com.sardor.enumeration.headers;
 
+import com.sardor.enumeration.EnumUtils;
+
 public enum RequestHeader implements EnumUtils {
     ACCEPT("Accept"),
     ACCEPT_ENCODING("Accept-Encoding"),

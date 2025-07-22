@@ -1,5 +1,7 @@
 package com.sardor.enumeration.headers;
 
+import com.sardor.enumeration.EnumUtils;
+
 public enum ResponseHeader implements EnumUtils {
     SERVER("Server"),
     SET_COOKIE("Set-Cookie"),

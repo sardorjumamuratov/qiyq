@@ -1,4 +1,4 @@
-package com.sardor.enumeration.headers;
+package com.sardor.enumeration;
 
 public interface EnumUtils {
     static <T extends Enum<T> & EnumUtils> T fromString(Class<T> enumType, String value) {

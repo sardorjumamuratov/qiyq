@@ -1,5 +1,7 @@
 package com.sardor.enumeration.headers;
 
+import com.sardor.enumeration.EnumUtils;
+
 public enum GeneralHeader implements EnumUtils {
     CACHE_CONTROL("Cache-Control"),
     CONNECTION("Connection"),

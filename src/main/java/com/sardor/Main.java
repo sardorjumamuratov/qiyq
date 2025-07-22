@@ -2,11 +2,14 @@ package com.sardor;
 
 import com.sardor.enumeration.HttpVersion;
 import com.sardor.enumeration.RequestMethod;
-import com.sardor.enumeration.headers.EnumUtils;
+import com.sardor.enumeration.EnumUtils;
+import com.sun.net.httpserver.HttpHandler;
 
 import java.io.*;
 import java.net.ServerSocket;
 import java.net.Socket;
+
+import static com.sardor.utils.Utils.ifValidThenGet;
 
 public class Main {
     public static void main(String[] args) {
@@ -35,17 +38,17 @@ public class Main {
 
             String[] requestLine = linesArray[0].split(" ");
             RequestMethod method = RequestMethod.getByNameOrThrow(requestLine[0]);
-            String requestURI = requestLine[1];
+            String requestURI = ifValidThenGet(requestLine[1]);
             HttpVersion httpVersion = EnumUtils.fromString(HttpVersion.class, requestLine[2]);
 
+            HttpHandler
             switch (method) {
                 case GET -> ;
-                case POST -> ;
-                case DELETE -> ;
-                case PUT -> ;
-                default -> ;
+//                case POST -> ;
+//                case DELETE -> ;
+//                case PUT -> ;
+//                default -> ;
             }
-
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

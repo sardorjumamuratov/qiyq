@@ -1,5 +1,7 @@
 package com.sardor.enumeration.headers;
 
+import com.sardor.enumeration.EnumUtils;
+
 public enum EntityHeader implements EnumUtils {
     ALLOW("Allow"),
     CONTENT_ENCODING("Content-Encoding"),
